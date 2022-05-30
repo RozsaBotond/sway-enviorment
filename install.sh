@@ -27,6 +27,7 @@ then
     sudo dnf install neovim nodejs -y
     sudo npm install -g yarn
     pip3 install pynvim
+    cp init.vim $HOME/.config/nvim
     sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
 else
