@@ -1,7 +1,31 @@
-    " Load .vimrc
-        set runtimepath^=~/.vim runtimepath+=~/.vim/after
-        let &packpath = &runtimepath
-        source ~/.vimrc
+    " Vimrc
+        " Don't try to be vi compatible
+        set nocompatible
+        filetype off
+
+        " Turn on syntax highlighting
+
+        syntax on
+        set mouse=a
+        set modelines=0
+        set number
+        set ruler
+        set visualbell
+
+        " Whitespace
+
+        set wrap
+        set textwidth=79
+        set formatoptions=tcqrn1
+        set tabstop=4
+        set shiftwidth=4
+        set expandtab
+        set autoindent
+        set smartindent
+
+        " Search
+        nnoremap / /\v
+        vnoremap / /\v
 
     " Plugins:
         call plug#begin("plugged")
