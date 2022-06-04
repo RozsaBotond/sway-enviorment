@@ -4,7 +4,7 @@ files).
 
 For now only on **fedora**.
 
-Plugins:
+### Plugins:
 - preservim/nerdtree
 - vim-airline/vim-airline
 - neoclide/coc.nvim
@@ -12,3 +12,6 @@ Plugins:
 - nvim-telescope/telescope.nvim
 - nvim-lua/plenary.nvim
 - preservim/tagbar
+- tpope/vim-fugitive
+
+Use at your own risc, this program changes your system.
