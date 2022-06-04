@@ -15,3 +15,7 @@ For now only on **fedora**.
 - tpope/vim-fugitive
 
 Use at your own risc, this program changes your system.
+
+### Install:
+
+``` ./install.sh ```
