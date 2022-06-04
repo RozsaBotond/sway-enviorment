@@ -37,6 +37,7 @@
             Plug 'nvim-telescope/telescope.nvim' " Telescope
             Plug 'nvim-lua/plenary.nvim' " Dep of telescope
             Plug 'preservim/tagbar' " Tagbar
+            Plug 'tpope/vim-fugitive' " Git support
 
         call plug#end()
 
