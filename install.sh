@@ -20,6 +20,7 @@ then
     if [ -d "$HOME/.config/nvim" ] 
     then
         echo ".config/nvim dir exist"
+        mv $HOME/.config/nvim/init.vim $HOME/.config/nvim/old_backup.vim
     else
         echo "making .config/nvim directory"
         mkdir $HOME/.config/nvim

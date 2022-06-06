@@ -18,4 +18,6 @@ Use at your own risc, this program changes your system.
 
 ### Install:
 
-``` ./install.sh ```
+```
+./install.sh
+```
