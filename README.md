@@ -19,5 +19,6 @@ Use at your own risc, this program changes your system.
 ### Install:
 
 ```
+git clone https://github.com/RozsaBotond/nvim-ide.git
 ./install.sh
 ```
