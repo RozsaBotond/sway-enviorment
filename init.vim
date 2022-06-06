@@ -1,4 +1,4 @@
-    " Vimrc
+    " Vimrc this is the normal terminal look
         " Don't try to be vi compatible
         set nocompatible
         filetype off
