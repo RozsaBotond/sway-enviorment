@@ -1,8 +1,5 @@
-# Neovim-IDE
-An install script, that makes neovim to an IDE with plugins and configs (dot
-files).
-
-For now only on **fedora**.
+# My development DE
+An install script, that installs sway, neovim, emacs, rofi, and other usefull files and configs for ***fedora***.
 
 ### Plugins:
 - preservim/nerdtree
@@ -25,3 +22,5 @@ cd sway-enviorment
 
 ./install.sh
 ```
+
+Feel free to contribute.
