@@ -19,6 +19,9 @@ Use at your own risc, this program changes your system.
 ### Install:
 
 ```
-git clone https://github.com/RozsaBotond/nvim-ide.git
+git clone https://github.com/RozsaBotond/sway-enviorment.git
+
+cd sway-enviorment
+
 ./install.sh
 ```
