@@ -1,11 +1,9 @@
-<<<<<<< HEAD
 # My development DE
 An install script, that installs sway, neovim, emacs, rofi, and other usefull files and configs for ***fedora***.
 =======
 # Intruduction:
 
 This is a small install script that installs sway enviorment and install configurations for the enviorment.
->>>>>>> 2bd14be (Renaming in readme)
 
 
 # Install:
