@@ -1,83 +1,61 @@
-<<<<<<< HEAD
-# My development DE
-An install script, that installs sway, neovim, emacs, rofi, and other usefull files and configs for ***fedora***.
-=======
-# Intruduction:
+#+title: Documents
+#+author: Rózsa Botond
+#+date: <2022-06-08 Wed>
+#+OPTIONS: toc:nil title:nil date:nil num:1
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="https://gongzhitaao.org/orgcss/org.css"/>
+* Intruduction:
 
 This is a small install script that installs sway enviorment and install configurations for the enviorment.
->>>>>>> 2bd14be (Renaming in readme)
 
+* Install:
 
-# Install:
-
-If you do not have installed lsb<sub>release</sub>, then run
-
-```command
+If you do not have installed lsb_release, then run
+#+begin_src command
 sudo dnf install redhat-lsb-core
-```
+#+end_src
 
-
-## Download
-
+** Download
 To download the script run:
-
-```command
+#+begin_src command
 git clone https://github.com/RozsaBotond/sway-enviorment.git
-```
+#+end_src
 
-
-# Usage:
+* Usage:
 
 Run:
-
-```command
+#+begin_src command
 cd sway-enviorment
 
 ./install
-```
+#+end_src
 
 and answer to the message ,from your package message.
 
-
-## Disclamer:
-
+** Disclamer:
 You have to have fedora system and it will ask you for your password!
 
-
-## Warning:
-
+** Warning:
 Your previous configs will be deleted, pleas make sore to backup your configs.
 
 Example:
-
-```command
+#+begin_src command
 mv .config/nvim/init.vim .config/nvim/old_init.vim
-```
+#+end_src
 
-
-# Sript documentations:
-
-
-## Sudo privilige check:
-
-```bash
+* Sript documentations:
+** Sudo privilige check:
+#+begin_src bash
 if (( "$EUID" == 0 )); then
     echo "Please do not run as root"
     exit
 fi
-```
-
-
-## System check:
-
-```bash
+#+end_src
+** System check:
+#+begin_src bash
 if [[ $(lsb_release -is) == "Fedora" ]]
-```
-
-
-## Folder check:
-
-```bash
+#+end_src
+** Folder check:
+#+begin_src bash
 if [ -d "$HOME/.config" ]
 then
     echo ".config dir exist"
@@ -93,18 +71,13 @@ else
     echo "making .config/nvim directory"
     mkdir $HOME/.config/nvim
 fi
-```
-
-
-## Install:
-
-```bash
+#+end_src
+** Install:
+#+begin_src bash
 sudo dnf install neovim nodejs -y
 sudo npm install -g yarn
 pip3 install pynvim
 cp init.vim $HOME/.config/nvim
 sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
 https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
-```
-
-Feel free to contribute.
+#+end_src
