@@ -42,4 +42,4 @@ Example:
 mv .config/nvim/init.vim .config/nvim/old_init.vim
 #+end_src
 * Documentation:
-[[https://github.com/RozsaBotond/sway-enviorment/blob/main/README.org][Link]]
+[[https://github.com/RozsaBotond/sway-enviorment/blob/main/Documentation.org][Link]]
