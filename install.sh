@@ -40,12 +40,13 @@ then
         echo "making .config/rofi directory"
         mkdir $HOME/.config/rofi
     fi
-    sudo dnf install neovim nodejs ripgrep fd-find sway rofi -y
+    sudo dnf install neovim nodejs ripgrep fd-find sway rofi waybar gnome-terminal -y
     sudo npm install -g yarn
     pip3 install pynvim
     cp init.vim $HOME/.config/nvim
     cp config $HOME/.config/sway/config
     cp ribbon_top.rasi $HOME/.config/rofi/ribbon_top.rasi
+    cp styles -r $HOME/.config/rofi/
     sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
 else

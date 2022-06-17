@@ -4,7 +4,7 @@
 #+OPTIONS: toc:nil title:nil date:nil num:1
 #+HTML_HEAD: <link rel="stylesheet" type="text/css" href="https://gongzhitaao.org/orgcss/org.css"/>
 * Introduction:
-This is a small install script that installs sway enviorment and install configurations for the enviorment.
+This is a small install script that installs sway enviorment and install configurations for the enviorment on ***fedora 36***.
 
 * Install:
 
@@ -20,7 +20,6 @@ git clone https://github.com/RozsaBotond/sway-enviorment.git
 #+end_src
 
 * Usage:
-
 Run:
 #+begin_src command
 cd sway-enviorment
