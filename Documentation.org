@@ -3,9 +3,8 @@
 #+date: <2022-06-08 Wed>
 #+OPTIONS: toc:nil title:nil date:nil num:1
 #+HTML_HEAD: <link rel="stylesheet" type="text/css" href="https://gongzhitaao.org/orgcss/org.css"/>
-* Sript documentations:
-** Check dependancies:
-*** Sudo privilige check:
+* Check dependancies:
+** Sudo privilige check:
 Checks for sudo privilige.
 
 #+begin_src bash
@@ -14,14 +13,14 @@ if (( "$EUID" == 0 )); then
     exit
 fi
 #+end_src
-*** System check:
+** System check:
 Checks the distro.
 But has lsb_release dependancy.
 
 #+begin_src bash
 if [[ $(lsb_release -is) == "Fedora" ]]
 #+end_src
-*** Folder check:
+** Folder check:
 Checks each folder and if it doesn't exist then it creates it.
 
 #+begin_src bash
@@ -58,7 +57,7 @@ else
     mkdir $HOME/.config/rofi
 fi
 #+end_src
-** Install:
+* Install:
 Installs programs and move configs to the right place.
 #+begin_src bash
 sudo dnf install neovim nodejs python3 ripgrep fd-find sway rofi waybar gnome-terminal -y
