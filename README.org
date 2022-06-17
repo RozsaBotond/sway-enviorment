@@ -4,7 +4,7 @@
 #+OPTIONS: toc:nil title:nil date:nil num:1
 #+HTML_HEAD: <link rel="stylesheet" type="text/css" href="https://gongzhitaao.org/orgcss/org.css"/>
 * Introduction:
-This is a small install script that installs sway enviorment and install configurations for the enviorment on ***fedora 36***.
+This is a small install script that installs sway enviorment and install configurations for the enviorment on *fedora 36*.
 
 * Install:
 
