@@ -24,10 +24,28 @@ then
         echo "making .config/nvim directory"
         mkdir $HOME/.config/nvim
     fi
-    sudo dnf install neovim nodejs -y
+
+    if [ -d "$HOME/.config/sway" ]
+    then
+        echo ".config/sway dir exist"
+    else
+        echo "making .config/sway directory"
+        mkdir $HOME/.config/sway
+    fi
+
+    if [ -d "$HOME/.config/rofi" ]
+    then
+        echo ".config/rofi dir exist"
+    else
+        echo "making .config/rofi directory"
+        mkdir $HOME/.config/rofi
+    fi
+    sudo dnf install neovim nodejs ripgrep fd-find sway rofi -y
     sudo npm install -g yarn
     pip3 install pynvim
     cp init.vim $HOME/.config/nvim
+    cp config $HOME/.config/sway/config
+    cp ribbon_top.rasi $HOME/.config/rofi/ribbon_top.rasi
     sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
 else

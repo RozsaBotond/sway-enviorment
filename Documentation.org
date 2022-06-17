@@ -4,19 +4,28 @@
 #+OPTIONS: toc:nil title:nil date:nil num:1
 #+HTML_HEAD: <link rel="stylesheet" type="text/css" href="https://gongzhitaao.org/orgcss/org.css"/>
 * Sript documentations:
-** Sudo privilige check:
+** Check dependancies:
+*** Sudo privilige check:
+Checks the sudo privilige..
+
 #+begin_src bash
 if (( "$EUID" == 0 )); then
     echo "Please do not run as root"
     exit
 fi
 #+end_src
-** System check:
+*** System check:
+Checks the distro...
+But has lsb_release dependancy.
+
 #+begin_src bash
 if [[ $(lsb_release -is) == "Fedora" ]]
 #+end_src
-** Folder check:
+*** Folder check:
+Checks each folder.
+
 #+begin_src bash
+echo "Installing started.."
 if [ -d "$HOME/.config" ]
 then
     echo ".config dir exist"
@@ -32,10 +41,18 @@ else
     echo "making .config/nvim directory"
     mkdir $HOME/.config/nvim
 fi
+
+if [ -d "$HOME/.config/sway" ]
+then
+    echo ".config/sway dir exist"
+else
+    echo "making .config/sway directory"
+    mkdir $HOME/.config/sway
+fi
 #+end_src
 ** Install:
 #+begin_src bash
-sudo dnf install neovim nodejs -y
+sudo dnf install neovim nodejs ripgrep fd-find sway rofi -y
 sudo npm install -g yarn
 pip3 install pynvim
 cp init.vim $HOME/.config/nvim
