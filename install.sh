@@ -40,8 +40,9 @@ then
         echo "making .config/rofi directory"
         mkdir $HOME/.config/rofi
     fi
-    sudo dnf install neovim nodejs ripgrep fd-find sway rofi waybar gnome-terminal -y
+    sudo dnf install neovim nodejs python3 ripgrep fd-find sway rofi waybar gnome-terminal -y
     sudo npm install -g yarn
+    python3 -m pip install --upgrade pip
     pip3 install pynvim
     cp init.vim $HOME/.config/nvim
     cp config $HOME/.config/sway/config

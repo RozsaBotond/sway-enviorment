@@ -35,9 +35,12 @@ You have to have *fedora 36* system and it will ask you for your password!
 ** Warning:
 Your previous configs will be deleted, pleas make sore to backup your configs.
 
-Example:
+Examples:
 #+begin_src command
-mv .config/nvim/init.vim .config/nvim/old_init.vim
+mv $HOME/.config/nvim/init.vim $HOME/.config/nvim/old_init.vim
+mv $HOME/.config/sway/config $HOME/.config/sway/old_config
+mv $HOME/.config/rofi/ribbon_top.rasi $HOME/.config/rofi/old_ribbon.rasi
+mv -r $HOME/.config/rofi/styles $HOME/.config/rofi/old_styles
 #+end_src
 * Documentation:
 [[https://github.com/RozsaBotond/sway-enviorment/blob/main/Documentation.org][Link]]
