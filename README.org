@@ -30,7 +30,7 @@ cd sway-enviorment
 and answer to the message ,from your package message.
 
 ** Disclamer:
-You have to have fedora system and it will ask you for your password!
+You have to have *fedora 36* system and it will ask you for your password!
 
 ** Warning:
 Your previous configs will be deleted, pleas make sore to backup your configs.
